@@ -1,0 +1,106 @@
+body, html {
+  background-color: #000000 !important;
+}
+
+.forbesH1 {
+  font-family: alpaca_scarlett_demo;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.forbesH2 {
+  font-family: alpaca_scarlett_demo;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+@font-face {
+    font-family: alpaca_scarlett_demo;
+    src: url(./fonts/Alpaca_Scarlett_Demo.ttf);
+}
+
+.topbanner {
+  position: sticky;
+  top: 0;
+  height: 87px;
+  background-color: rgb(0, 0, 0, 1);
+  font-family: alpaca_scarlett_demo;
+  z-index: 10;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.topnav p {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 18px;
+}
+
+.socialmedia {
+  color: #ffffff;
+  list-style: none;
+  float: right;
+  right: 16px;
+  margin-top: 15px;
+}
+
+.socialmedia p {
+  float: left;
+  display: block;
+  padding: 14px 16px;
+}
+
+.nav-logo {
+  float: left;
+}
+
+.nav-logo img {
+  margin-top: 13px;
+  margin-left: 10px;
+  height: 60px;
+}
+
+.forbesMenu {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width: 400px;
+}
+
+.forbesMenu li {
+  list-style: none;
+  color: white;
+}
+
+.forbesMenu span {
+  list-style: none;
+  color: white;
+  float: right;
+  width: 18px;
+  text-align: right;
+}
+
+.forbesMenuCenter {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0;
+  max-width: 500px;
+}
+
+.forbesMenuCenter li {
+  list-style: none;
+  color: white;
+}
