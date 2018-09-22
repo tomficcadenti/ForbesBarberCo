@@ -1,6 +1,6 @@
 function homeClick() {
   hideAllContent();
-  document.getElementById('homePage').style.display = "inline";
+  document.getElementById('homePage').style.display = "block";
 }
 
 function bookNowClick() {
@@ -19,6 +19,9 @@ function serviceMenuClick() {
 function photoGalleryClick() {
   hideAllContent();
   document.getElementById('photoGalleryPage').style.display = "inline";
+  document.getElementById('pixlee_container').style.width = "100%";
+  document.getElementById('pixlee_container').style.height = "100%";
+  //document.getElementById('photoGalleryPage').style.float = "left";
 }
 
 function hideAllContent() {
