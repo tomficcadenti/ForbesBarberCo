@@ -12,11 +12,11 @@ function serviceMenuClick() {
   if (document.getElementById('homePage').style.display === "none") {
     document.getElementById('homePage').style.display = "block";
   }
+  console.log('success');
   serviceMenu.scrollIntoView({behavior: "smooth", block: "start"});
 }
 
 function photoGalleryClick() {
-  console.log('success');
   hideAllContent();
   document.getElementById('photoGalleryPage').style.display = "inline";
   //document.getElementById('photoGalleryPage').style.float = "left";
