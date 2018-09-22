@@ -1,6 +1,6 @@
 function homeClick() {
   hideAllContent();
-  document.getElementById('homePage').style.display = "block";
+  document.getElementById('homePage').style.display = "inline";
 }
 
 function bookNowClick() {
