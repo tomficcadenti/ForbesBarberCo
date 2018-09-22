@@ -10,7 +10,7 @@ function bookNowClick() {
 function serviceMenuClick() {
   let serviceMenu = document.getElementById('serviceMenu');
   if (document.getElementById('homePage').style.display === "none") {
-    document.getElementById('homePage').style.display = "block";
+    homeClick();
   }
   console.log('success');
   serviceMenu.scrollIntoView({behavior: "smooth", block: "start"});
@@ -19,7 +19,6 @@ function serviceMenuClick() {
 function photoGalleryClick() {
   hideAllContent();
   document.getElementById('photoGalleryPage').style.display = "inline";
-  //document.getElementById('photoGalleryPage').style.float = "left";
 }
 
 function hideAllContent() {
