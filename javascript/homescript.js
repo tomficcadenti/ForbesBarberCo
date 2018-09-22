@@ -15,7 +15,8 @@ function serviceMenuClick() {
 function photoGalleryClick() {
   console.log('success');
   hideAllContent();
-  document.getElementById('photoGalleryPage').style.display = "block";
+  document.getElementById('photoGalleryPage').style.display = "inline";
+  //document.getElementById('photoGalleryPage').style.float = "left";
 }
 
 function hideAllContent() {
