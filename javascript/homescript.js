@@ -9,6 +9,9 @@ function bookNowClick() {
 
 function serviceMenuClick() {
   let serviceMenu = document.getElementById('serviceMenu');
+  if (document.getElementById('homePage').style.display === "none") {
+    document.getElementById('homePage').style.display = "block";
+  }
   serviceMenu.scrollIntoView({behavior: "smooth", block: "start"});
 }
 
