@@ -25,104 +25,121 @@
   </head>
   <body>
     <div class="topbanner">
-      <div class="nav-logo">
+      <div class="nav-logo" id="home" onclick="homeClick()">
         <img src="./images/home/whiteOverBlackLogo.jpg">
       </div>
 
       <div class="topnav">
-        <p style="border-right: 1px solid white;">BOOK NOW</p>
-        <p style="border-right: 1px solid white;">SERVICE MENU</p>
-        <p style="border-right: 1px solid white;">FEATURED PRODUCTS</p>
-        <p style="border-right: 1px solid white;">PHOTO GALLERY</p>
-        <p class="topnavlast">ABOUT US</p>
+        <p style="border-right: 1px solid white;"
+           id="bookNow"
+           onclick="bookNowClick()">BOOK NOW</p>
+        <p style="border-right: 1px solid white;"
+           onclick="serviceMenuClick()"
+           id="services">
+          SERVICE MENU
+        </p>
+        <p style="border-right: 1px solid white;"
+           id="featuredProducts">
+           FEATURED PRODUCTS</p>
+        <p style="border-right: 1px solid white;"
+           id="photoGallery"
+           onclick="photoGalleryClick()">
+           PHOTO GALLERY</p>
+        <p class="topnavlast"
+           id="aboutUs">
+           ABOUT US</p>
       </div>
-
-      <!--<div class="socialmedia">
-        <p style="border-right: 1px solid white;">INSTAGRAM</p>
-        <p>FACEBOOK</p>
-      </div>-->
     </div>
 
-    <div>
-      <img class="banner-image" src="./images/home/mainBanner.jpg">
-    </div>
-
-    <h1 class="forbesH1">SERVICE MENU</h1>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <h2 class="forbesH2">~ STANDARD SERVICES ~</h2>
-          <ul class="forbesMenu">
-            <li>Appointment Fee <span>+$5</span></li>
-            <li>Haircut <span>$25</span></li>
-            <li>Buzz Cut <span>$15</span></li>
-            <li>Shear Cut <span>$30</span></li>
-            <li>Head Shave <span>$35</span></li>
-            <li>Hot Towel Face Shave <span>$35</span></li>
-            <li>Hair Cut Shave Combo <span>$55</span></li>
-            <li>Beard Special <span>$25</span></li>
-            <li>Beard Trim <span>$10</span></li>
-            <li>Line Up <span>$7</span></li>
-            <li>+Razor <span>$10</span></li>
-            <li>Rest Facial <span>$15</span></li>
-            <li>Black Mask Facial <span>$25</span></li>
-            <li>Nose Wax <span>$5</span></li>
-            <li>Ear Wax <span>$5</span></li>
-          </ul>
-        </div>
-        <div class="col-sm">
-          <h2 class="forbesH2" style="color: gold;">~ THE PRESIDENTIAL - 90$ ~</h2>
-          <ul style="text-align: center;" class="forbesMenu">
-            <li>Haircut</li>
-            <li>Hot Shave/Beard Trim & Line Up</li>
-            <li>Black Mask Facial</li>
-            <li>Ozone Steam</li>
-            <li>Aroma Therapy</li>
-            <li>Nose Hair Waxing</li>
-            <li>Shoulder Massage</li>
-          </ul>
-        </div>
+    <div id="homePage">
+      <div>
+        <img class="banner-image" src="./images/home/mainBanner.jpg">
       </div>
-      <div class="row">
-        <div class="col-sm">
-          <h2 class="forbesH2">~ GROOMS MEN ~</h2>
-          <h2 style="margin: 0px; font-size: 14px;" class="forbesH2">WEDDING PARTY</h2>
-          <div class="row">
-            <div class="col-sm">
-              <ul style="text-align: center;" class="forbesMenu">
-                <li><u>ON-SITE</u></li>
-                <li>On-site Fee: Travel Expenses + $500</li>
-                <li>Service Fee: 80$ per-person</li>
-              </ul>
-              <ul style="text-align: center;" class="forbesMenu">
-                <li><u>INCLUDES</u></li>
-                <li>Haircut</li>
-                <li>Face Shave</li>
-                <li>Black Mask Facial</li>
-                <li>Shoulder Massage</li>
-              </ul>
-            </div>
-            <div class="col-sm">
-              <ul style="text-align: center;" class="forbesMenu">
-                <li><u>AT FORBES BARBER CO</u></li>
-                <li>Shop Fee: $200</li>
-                <li>Service Fee: 90$ per-person</li>
-              </ul>
-              <ul style="text-align: center;" class="forbesMenu">
-                <li><u>INCLUDES</u></li>
-                <li>Haircut</li>
-                <li>Face Shave</li>
-                <li>Black Mask Facial</li>
-                <li>Ozone Steam</li>
-                <li>Aroma Therapy</li>
-                <li>Nose Hair Wax</li>
-                <li>Shoulder Massage</li>
-              </ul>
+
+      <h1 class="forbesH1" id="serviceMenu">SERVICE MENU</h1>
+
+      <div class="container" id="serviceMenuPage" style="display: block;">
+        <div class="row">
+          <div class="col-sm">
+            <h2 class="forbesH2">~ STANDARD SERVICES ~</h2>
+            <ul class="forbesMenu">
+              <li>Appointment Fee <span>+$5</span></li>
+              <li>Haircut <span>$25</span></li>
+              <li>Buzz Cut <span>$15</span></li>
+              <li>Shear Cut <span>$30</span></li>
+              <li>Head Shave <span>$35</span></li>
+              <li>Hot Towel Face Shave <span>$35</span></li>
+              <li>Hair Cut Shave Combo <span>$55</span></li>
+              <li>Beard Special <span>$25</span></li>
+              <li>Beard Trim <span>$10</span></li>
+              <li>Line Up <span>$7</span></li>
+              <li>+Razor <span>$10</span></li>
+              <li>Rest Facial <span>$15</span></li>
+              <li>Black Mask Facial <span>$25</span></li>
+              <li>Nose Wax <span>$5</span></li>
+              <li>Ear Wax <span>$5</span></li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h2 class="forbesH2" style="color: gold;">~ THE PRESIDENTIAL - 90$ ~</h2>
+            <ul style="text-align: center;" class="forbesMenu">
+              <li>Haircut</li>
+              <li>Hot Shave/Beard Trim & Line Up</li>
+              <li>Black Mask Facial</li>
+              <li>Ozone Steam</li>
+              <li>Aroma Therapy</li>
+              <li>Nose Hair Waxing</li>
+              <li>Shoulder Massage</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <h2 class="forbesH2">~ GROOMS MEN ~</h2>
+            <h2 style="margin: 0px; font-size: 14px;" class="forbesH2">WEDDING PARTY</h2>
+            <div class="row">
+              <div class="col-sm">
+                <ul style="text-align: center;" class="forbesMenu">
+                  <li><u>ON-SITE</u></li>
+                  <li>On-site Fee: Travel Expenses + $500</li>
+                  <li>Service Fee: $80 per-person</li>
+                </ul>
+                <ul style="text-align: center;" class="forbesMenu">
+                  <li><u>INCLUDES</u></li>
+                  <li>Haircut</li>
+                  <li>Face Shave</li>
+                  <li>Black Mask Facial</li>
+                  <li>Shoulder Massage</li>
+                </ul>
+              </div>
+              <div class="col-sm">
+                <ul style="text-align: center;" class="forbesMenu">
+                  <li><u>AT FORBES BARBER CO</u></li>
+                  <li>Shop Fee: $200</li>
+                  <li>Service Fee: $90 per-person</li>
+                </ul>
+                <ul style="text-align: center;" class="forbesMenu">
+                  <li><u>INCLUDES</u></li>
+                  <li>Haircut</li>
+                  <li>Face Shave</li>
+                  <li>Black Mask Facial</li>
+                  <li>Ozone Steam</li>
+                  <li>Aroma Therapy</li>
+                  <li>Nose Hair Wax</li>
+                  <li>Shoulder Massage</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="photoGalleryPage" style="display: none; height: 100%; width: 100%;">
+      <h1 class="forbesH1" id="serviceMenu">PHOTO GALLERY</h1>
+      <div id="pixlee_container" style="height: 100%; width: 100%;"></div>
+      <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'2LuBwUS2ObJA0ZRtcYP3'});Pixlee.addSimpleWidget({widgetId:'9343'});};</script>
+      <script src="https://instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
     </div>
   </body>
 </html>

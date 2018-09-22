@@ -7,6 +7,7 @@ body, html {
   color: #ffffff;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .forbesH2 {
@@ -44,6 +45,40 @@ body, html {
   padding: 14px 16px;
   text-decoration: none;
   margin-top: 18px;
+}
+
+#bookNow:hover {
+  cursor: pointer;
+  color: #6C6C6C;
+}
+
+#services:hover {
+  cursor: pointer;
+  color: #6C6C6C;
+}
+
+#featuredProducts:hover {
+  cursor: pointer;
+  color: #6C6C6C;
+}
+
+#photoGallery:hover {
+  cursor: pointer;
+  color: #6C6C6C;
+}
+
+#aboutUs:hover {
+  cursor: pointer;
+  color: #6C6C6C;
+}
+
+#pixlee_container div {
+  height: 100%
+}
+
+#home:hover {
+  cursor: pointer;
+  color: #6C6C6C;
 }
 
 .socialmedia {
@@ -89,18 +124,4 @@ body, html {
   float: right;
   width: 18px;
   text-align: right;
-}
-
-.forbesMenuCenter {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 20px;
-  padding: 0;
-  max-width: 500px;
-}
-
-.forbesMenuCenter li {
-  list-style: none;
-  color: white;
 }
