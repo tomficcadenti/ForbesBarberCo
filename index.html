@@ -13,6 +13,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- External Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -23,8 +24,8 @@
 
     <title>Forbes Barber Co</title>
   </head>
-  <body>
-    <div class="topbanner">
+  <body onload="detectMobile()">
+    <div class="topbanner" id="topbanner">
       <div class="nav-logo" id="home" onclick="homeClick()">
         <img src="./images/home/whiteOverBlackLogo.jpg">
       </div>
@@ -38,9 +39,9 @@
            id="services">
           SERVICE MENU
         </p>
-        <p style="border-right: 1px solid white;"
+        <!-- <p style="border-right: 1px solid white;"
            id="featuredProducts">
-           FEATURED PRODUCTS</p>
+           FEATURED PRODUCTS</p> -->
         <p style="border-right: 1px solid white;"
            id="photoGallery"
            onclick="photoGalleryClick()">
@@ -49,6 +50,21 @@
            id="aboutUs">
            ABOUT US</p>
       </div>
+    </div>
+
+    <div class="topnavMobile" id="topnavMobile">
+      <a href="#home" class="active forbesH2mobileNav">Forbes Barber Co</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#" class="forbesH2mobileNav" onclick="bookNowClick()">Book Now</a>
+        <!-- <a href="#" class="forbesH2mobileNav">Service Menu</a> -->
+        <a href="#" class="forbesH2mobileNav" onclick="photoGalleryClick()">Photo Gallery</a>
+        <a href="#" class="forbesH2mobileNav">About Us</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <div id="homePage">
@@ -135,11 +151,41 @@
       </div>
     </div>
 
-    <div id="photoGalleryPage" style="display: none; width: 100%; height: 100%;">
+    <!-- <div id="photoGalleryPage" style="display: none; width: 100%; height: 100%;">
       <h1 class="forbesH1" id="serviceMenu">PHOTO GALLERY</h1>
       <div id="pixlee_container" style="width: 100%; height: 100%;"></div>
       <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'2LuBwUS2ObJA0ZRtcYP3'});Pixlee.addSimpleWidget({widgetId:'9343'});};</script>
       <script src="https://instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+    </div> -->
+
+    <div class="container" id="aboutUsPage">
+      <div class="row" style="text-align: center">
+        <div class="col">
+          <h3 class="forbesH1">Mark Forbes</h3>
+          <img src="./images/aboutUs/mark.JPG" style="height: 200px; border-radius: 100px">
+          <h3 class="bookNow" id="mark" onclick="bookWithStaff(event)">BOOK WITH BRANDON</h3>
+        </div>
+        <div class="col">
+          <h3 class="forbesH1">Evan Apodaca</h3>
+          <img src="./images/aboutUs/evan.JPG" style="height: 200px; border-radius: 100px">
+          <h3 class="bookNow" id="evan" onclick="bookWithStaff(event)">BOOK WITH EVAN</h3>
+        </div>
+        <div class="col">
+          <h3 class="forbesH1">Brandon Duby</h3>
+          <img src="./images/aboutUs/brandon.JPG" style="height: 200px; border-radius: 100px">
+          <h3 class="bookNow" id="brandon" onclick="bookWithStaff(event)">BOOK WITH BRANDON</h3>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col">
+          <h3 class="forbesH1">Thomas Ficcadenti</h3>
+          <img src="./images/aboutUs/mark.JPG" style="height: 200px; border-radius: 100px">
+        </div>
+        <div class="col">
+          <img>
+          <h3 class="forbesH1">Thomas Ficcadenti</h3>
+        </div>
+      </div> -->
     </div>
   </body>
 </html>
