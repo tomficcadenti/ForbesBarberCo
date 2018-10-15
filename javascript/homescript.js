@@ -23,9 +23,15 @@ function photoGalleryClick() {
 
 }
 
+function aboutUsClick() {
+  hideAllContent();
+  document.getElementById('aboutUsPage').style.display = "block";
+}
+
 function hideAllContent() {
   document.getElementById('homePage').style.display = "none";
-  document.getElementById('photoGalleryPage').style.display = "none";
+  //document.getElementById('photoGalleryPage').style.display = "none";
+  document.getElementById('aboutUsPage').style.display = "none";
 }
 
 function bookWithStaff(e) {
