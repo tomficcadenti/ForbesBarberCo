@@ -4,6 +4,34 @@ body, html {
   width: 100% !important;
 }
 
+.off-color {
+  font-family: Lato;
+  background-color: #ffffff !important;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.off-color, hr {
+  border-color: #000000;
+}
+
+.on-color {
+  font-family: Lato;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-color: #ffffff;
+}
+
+.on-color, hr {
+  border-color: #ffffff;
+}
+
 iframe {
   width: 100% !important;
   overflow: scroll !important;
@@ -58,9 +86,10 @@ iframe {
 }
 
 .topbanner {
-  position: sticky;
+  position: fixed;
   top: 0;
   height: 87px;
+  width: 100%;
   background-color: rgb(0, 0, 0, 1);
   font-family: alpaca_scarlett_demo;
   z-index: 10;
@@ -195,4 +224,8 @@ iframe {
 
 .active {
   color: white;
+}
+
+#homePage p {
+  color: grey;
 }

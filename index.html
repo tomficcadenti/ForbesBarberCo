@@ -14,6 +14,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <!-- External Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -73,9 +74,70 @@
         <img class="banner-image" src="./images/home/mainBanner.jpg">
       </div>
 
-      <h1 class="forbesH1" id="serviceMenu">SERVICE MENU</h1>
+      <h1 class="forbesH1" style="margin-bottom: 0px" id="serviceMenu">SERVICE MENU</h1>
+      <p style="color: white; text-align: center;">Appointment Fee: 5$</p>
 
-      <div class="container" id="serviceMenuPage" style="display: block;">
+      <div  class="off-color">
+        <h1 style="font-family: alpaca_scarlett_demo;">HAIRCUTS</h1>
+        <hr class="off-color" style="margin-left: 80px; margin-right: 80px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <h4>Haircut - 25$</h4>
+              <p>A timeless classic. Bring in a picture or browse our gallery to find a new look!</p>
+            </div>
+            <div class="col-lg-4">
+              <h4>Buzzcut -15$</h4>
+              <p>A haircut where an electric razor is used instead of siscors.</p>
+            </div>
+            <div class="col-lg-4">
+              <h4>Shear Cut - 30$</h4>
+              <p>Like a haircut... but not. lol</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>Head Shave - 35$</h4>
+              <p>A salute to captain picard.</p>
+            </div>
+            <div class="col-lg-6">
+              <h4>Haircut Shave Combo - 55$</h4>
+              <p>Shave and a haircut... two bits!</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" style="font-family: LATO; padding-left: 20px; padding-right: 20px;">Book Now!</button>
+      </div>
+
+      <div class="on-color">
+        <h1 style="font-family: alpaca_scarlett_demo;">FACIAL HAIR</h1>
+        <hr class="on-color" style="margin-left: 80px; margin-right: 80px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>Hot Towel Face Shave</h4>
+              <p>Clean cut face without a hair out of place!</p>
+            </div>
+            <div class="col-lg-6">
+              <h4>Beard Special</h4>
+              <p>Give your beard the respect it deserves.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>Beard Trim</h4>
+              <p>Simple, necessary maintenance.</p>
+            </div>
+            <div class="col-lg-6">
+              <h4>Line Up - 7$ (with razor +3$)</h4>
+              <p>Idk what this even is...</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" style="font-family: LATO; padding-left: 20px; padding-right: 20px;">Book Now!</button>
+      </div>
+
+      <!-- <div class="container" id="serviceMenuPage" style="display: block;">
         <div class="row">
           <div class="col-sm">
             <h2 class="forbesH2">~ STANDARD SERVICES ~</h2>
@@ -149,7 +211,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <h1 class="forbesH1" id="serviceMenu">LOCATION</h1>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4094615618556!2d-117.68223008491336!3d33.59467894915108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dce96f00b5adb9%3A0x16bce02f1f559106!2sForbes+Barber+Company!5e0!3m2!1sen!2sus!4v1539572827958" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
@@ -167,7 +229,9 @@
           <div class="col">
             <h3 class="forbesH1">Mark Forbes</h3>
             <img src="./images/aboutUs/mark.JPG" style="height: 200px; border-radius: 100px">
-            <h3 class="bookNow" id="mark" onclick="bookWithStaff(event)">BOOK WITH BRANDON</h3>
+            <h3 class="bookNow" id="mark" onclick="bookWithStaff(event)">BOOK WITH MARK
+
+            </h3>
           </div>
           <div class="col">
             <h3 class="forbesH1">Evan Apodaca</h3>
