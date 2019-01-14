@@ -3,10 +3,6 @@ function homeClick() {
   document.getElementById('homePage').style.display = "block";
 }
 
-function bookNowClick() {
-  window.location = "https://squareup.com/appointments/book/2CB8QMWHX63E8/forbes-barber-company-laguna-hills-ca";
-}
-
 function serviceMenuClick() {
   let serviceMenu = document.getElementById('serviceMenu');
   if (document.getElementById('homePage').style.display === "none") {
@@ -28,10 +24,24 @@ function aboutUsClick() {
   document.getElementById('aboutUsPage').style.display = "block";
 }
 
+function bookNowClick() {
+    window.location.href = "./BookNow/index.html";
+}
+
+function goHomeExternalClick() {
+    window.location.href = "../index.html";
+}
+
+function locationClick() {
+  hideAllContent();
+  document.getElementById('locationPage').style.display = "block";
+}
+
 function hideAllContent() {
   document.getElementById('homePage').style.display = "none";
   //document.getElementById('photoGalleryPage').style.display = "none";
   document.getElementById('aboutUsPage').style.display = "none";
+  document.getElementById('locationPage').style.display = "none";
 }
 
 function bookWithStaff(e) {
@@ -58,11 +68,22 @@ function detectMobile() {
   var desktopNav = document.getElementById("topbanner");
   var mobileNav = document.getElementById("topnavMobile");
 
-  if (window.innerWidth <= 800 && window.innerHeight <= 800) {
+  if (window.innerWidth <= 900 && window.innerHeight <= 800) {
    desktopNav.style.display = "none";
    mobileNav.style.display = "block";
  } else {
    desktopNav.style.display = "block";
    mobileNav.style.display = "none";
  }
+
+ $(window).resize(function() {
+    if(this.resizeTO) clearTimeout(this.resizeTO);
+    this.resizeTO = setTimeout(function() {
+        $(this).trigger('resizeEnd');
+    }, 500);
+  });
+
+  $(window).bind('resizeEnd', function() {
+    detectMobile();
+  });
 }

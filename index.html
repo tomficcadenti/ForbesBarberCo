@@ -40,13 +40,14 @@
            id="services">
           SERVICE MENU
         </p>
-        <!-- <p style="border-right: 1px solid white;"
-           id="featuredProducts">
-           FEATURED PRODUCTS</p> -->
         <p style="border-right: 1px solid white;"
            id="photoGallery"
            onclick="photoGalleryClick()">
            PHOTO GALLERY</p>
+        <p style="border-right: 1px solid white;"
+           id="photoGallery"
+           onclick="locationClick()">
+           LOCATION</p>
         <p class="topnavlast"
            id="aboutUs"
            onclick="aboutUsClick()">
@@ -59,8 +60,8 @@
       <!-- Navigation links (hidden by default) -->
       <div id="myLinks">
         <a href="#" class="forbesH2mobileNav" onclick="bookNowClick()">Book Now</a>
-        <!-- <a href="#" class="forbesH2mobileNav">Service Menu</a> -->
         <a href="#" class="forbesH2mobileNav" onclick="photoGalleryClick()">Photo Gallery</a>
+        <a href="#" class="forbesH2mobileNav" onclick="locationClick()">Location</a>
         <a href="#" class="forbesH2mobileNav" onclick="aboutUsClick()">About Us</a>
       </div>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -82,27 +83,33 @@
         <hr class="off-color" style="margin-left: 80px; margin-right: 80px;">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
-              <h4>Haircut - 25$</h4>
-              <p>A timeless classic. Bring in a picture or browse our gallery to find a new look!</p>
+            <div class="col-lg-6">
+              <h4>Haircut</h4>
+              <p>Includes any machine length on the sides, with shear work on top. Hot Towel Neck Shave Included with service.<br/>30 minutes. $30</p>
             </div>
-            <div class="col-lg-4">
-              <h4>Buzzcut -15$</h4>
-              <p>A haircut where an electric razor is used instead of siscors.</p>
-            </div>
-            <div class="col-lg-4">
-              <h4>Shear Cut - 30$</h4>
-              <p>Like a haircut... but not. lol</p>
+            <div class="col-lg-6">
+              <h4>Buzzcut</h4>
+              <p>One machine length all over.<br/><br/>10 minutes. Starting at $15</p>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <h4>Head Shave - 35$</h4>
-              <p>A salute to captain picard.</p>
+              <h4>Head Shave</h4>
+              <p>2 hot towels, warm lather, astringent, and full straight edge razor shave of the sides and top of the head.<br/>30 minutes. Starting at $25</p>
             </div>
             <div class="col-lg-6">
-              <h4>Haircut Shave Combo - 55$</h4>
-              <p>Shave and a haircut... two bits!</p>
+              <h4>Shear Cut</h4>
+              <p>Shear cut on hair 10 inches or less. +5$ for hair longer than 10 inches. Hot Towel Neck Shave Included with service.<br/>40 minutes. $35</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+              <h4>Little Mans Haircut</h4>
+              <p>CHILDREN 12 AND UNDER ONLY. Any machine length on the sides, with shear work on top.<br/>25 minutes. $25</p>
+            </div>
+            <div class="col-lg-4">
             </div>
           </div>
         </div>
@@ -115,113 +122,120 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h4>Hot Towel Face Shave</h4>
-              <p>Clean cut face without a hair out of place!</p>
+              <h4>Shave</h4>
+              <p>Includes 2 Hot Towels, warm lather, facial steam expierence, and a full face shave using a high quality straight edge razor.<br/>45 minutes. $40</p>
             </div>
             <div class="col-lg-6">
               <h4>Beard Special</h4>
-              <p>Give your beard the respect it deserves.</p>
+              <p>All beard work + a hot towel line up of the lower front neck and the cheeks of the beard.<br/>30 minutes. Starting at $25</p>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-6">
               <h4>Beard Trim</h4>
-              <p>Simple, necessary maintenance.</p>
+              <p>Includes all beard shaping, from a slight trim to a full buzz.<br/><br/>15 minutes. Starting at $10</p>
             </div>
             <div class="col-lg-6">
-              <h4>Line Up - 7$ (with razor +3$)</h4>
-              <p>Idk what this even is...</p>
+              <h4>Line Up</h4>
+              <p>Includes either perfect beard line up (the cheeks of the beard), or an outline/clean up of your current haircut.<br/>10 minutes. Starting at $10</p>
             </div>
           </div>
         </div>
         <button class="btn btn-primary" style="font-family: LATO; padding-left: 20px; padding-right: 20px;">Book Now!</button>
       </div>
 
-      <!-- <div class="container" id="serviceMenuPage" style="display: block;">
-        <div class="row">
-          <div class="col-sm">
-            <h2 class="forbesH2">~ STANDARD SERVICES ~</h2>
-            <ul class="forbesMenu">
-              <li>Appointment Fee <span>+$5</span></li>
-              <li>Haircut <span>$25</span></li>
-              <li>Buzz Cut <span>$15</span></li>
-              <li>Shear Cut <span>$30</span></li>
-              <li>Head Shave <span>$35</span></li>
-              <li>Hot Towel Face Shave <span>$35</span></li>
-              <li>Hair Cut Shave Combo <span>$55</span></li>
-              <li>Beard Special <span>$25</span></li>
-              <li>Beard Trim <span>$10</span></li>
-              <li>Line Up <span>$7</span></li>
-              <li>+Razor <span>$10</span></li>
-              <li>Rest Facial <span>$15</span></li>
-              <li>Black Mask Facial <span>$25</span></li>
-              <li>Nose Wax <span>$5</span></li>
-              <li>Ear Wax <span>$5</span></li>
-            </ul>
+      <div  class="off-color">
+        <h1 style="font-family: alpaca_scarlett_demo;">SPECIALS</h1>
+        <hr class="off-color" style="margin-left: 80px; margin-right: 80px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+              <h4>~ The Presidential ~</h4>
+              <p>Includes: Haircut, Hot Shave/Beard Trim & Line Up, Black Mask Facial, Ozone Steam Aroma Therapy, Nose Hair Waxing, Shoulder Massage<br/>1 hour 30 minutes. $90</p>
+            </div>
+            <div class="col-lg-2">
+            </div>
           </div>
-          <div class="col-sm">
-            <h2 class="forbesH2" style="color: gold;">~ THE PRESIDENTIAL - 90$ ~</h2>
-            <ul style="text-align: center;" class="forbesMenu">
-              <li>Haircut</li>
-              <li>Hot Shave/Beard Trim & Line Up</li>
-              <li>Black Mask Facial</li>
-              <li>Ozone Steam</li>
-              <li>Aroma Therapy</li>
-              <li>Nose Hair Waxing</li>
-              <li>Shoulder Massage</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <h2 class="forbesH2">~ GROOMS MEN ~</h2>
-            <h2 style="margin: 0px; font-size: 14px;" class="forbesH2">WEDDING PARTY</h2>
-            <div class="row">
-              <div class="col-sm">
-                <ul style="text-align: center;" class="forbesMenu">
-                  <li><u>ON-SITE</u></li>
-                  <li>On-site Fee: Travel Expenses + $500</li>
-                  <li>Service Fee: $80 per-person</li>
-                </ul>
-                <ul style="text-align: center;" class="forbesMenu">
-                  <li><u>INCLUDES</u></li>
-                  <li>Haircut</li>
-                  <li>Face Shave</li>
-                  <li>Black Mask Facial</li>
-                  <li>Shoulder Massage</li>
-                </ul>
-              </div>
-              <div class="col-sm">
-                <ul style="text-align: center;" class="forbesMenu">
-                  <li><u>AT FORBES BARBER CO</u></li>
-                  <li>Shop Fee: $200</li>
-                  <li>Service Fee: $90 per-person</li>
-                </ul>
-                <ul style="text-align: center;" class="forbesMenu">
-                  <li><u>INCLUDES</u></li>
-                  <li>Haircut</li>
-                  <li>Face Shave</li>
-                  <li>Black Mask Facial</li>
-                  <li>Ozone Steam</li>
-                  <li>Aroma Therapy</li>
-                  <li>Nose Hair Wax</li>
-                  <li>Shoulder Massage</li>
-                </ul>
-              </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>Rest Facial</h4>
+              <p>Facial steam, facial scrub, face massage.<br/><br/>20 minutes. Starting at $15</p>
+            </div>
+            <div class="col-lg-6">
+              <h4>Black Mask Facial</h4>
+              <p>Facial steam, facial scrub, face massage, finished with a black peel off facial exfoliate mask.<br/>30 minutes. Starting at $25</p>
             </div>
           </div>
         </div>
-      </div> -->
-      <h1 class="forbesH1" id="serviceMenu">LOCATION</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4094615618556!2d-117.68223008491336!3d33.59467894915108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dce96f00b5adb9%3A0x16bce02f1f559106!2sForbes+Barber+Company!5e0!3m2!1sen!2sus!4v1539572827958" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <button class="btn btn-primary" style="font-family: LATO; padding-left: 20px; padding-right: 20px;">Book Now!</button>
+      </div>
+
+      <div class="on-color">
+        <h1 style="margin-bottom: 0px; font-family: alpaca_scarlett_demo;">GROOMS MEN</h1>
+        <h1 style="font-size: 16px; font-family: alpaca_scarlett_demo;">WEDDING PARTY</h1>
+        <hr class="on-color" style="margin-left: 80px; margin-right: 80px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>At Location</h4>
+              <p>Service Includes: Haircut, Face shave/Beard trim, line up, hot towel finish, shoulder massage.</p>
+            </div>
+            <div class="col-lg-3">
+              <h4 style="font-size: 18px;">Travel Expense</h4>
+              <ul style="text-align: left; width: 200px; margin: auto; padding-bottom: 10px;">
+                <li>
+                  <p style="margin-bottom: 0px;">2-10 Miles - $0</p>
+                </li>
+                <li>
+                  <p style="margin-bottom: 0px;">11-20 Miles - $100</p>
+                </li>
+                <li>
+                  <p style="margin-bottom: 0px;">21-30 Miles - $200</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h4 style="font-size: 18px;">Service Fee: Daily Rate</h4>
+              <ul style="text-align: left; width: 250px; margin: auto; padding-bottom: 10px;">
+                <li>
+                  <p style="margin-bottom: 0px;">Full Day, 8 hours - $800</p>
+                </li>
+                <li>
+                  <p style="margin-bottom: 0px;">Half Day, 5 hours - $550</p>
+                </li>
+                <li>
+                  <p style="margin-bottom: 0px;">Quarter Day, 3 hours - $350</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="on-color" style="margin-left: 80px; margin-right: 80px; margin-top: 15px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h4 style="margin-bottom: 5px;">At Forbes Barber Co.</h4>
+              <p style="color: white; font-size: 14px; margin-bottom: 5px;">Before & after hours only</p>
+              <p>Service Includes: Haircut, Face shave, line up, hot towel finish, shoulder massage, <b style="color: #C0C0C0">Ozone Steam, Aroma Therapy</b>.</p>
+            </div>
+            <div class="col-lg-6">
+              <h4 style="font-size: 18px;">Pricing</h4>
+              <p>Shop Fee - $100<br/>Service Fee - $70</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" style="font-family: LATO; padding-left: 20px; padding-right: 20px;">Book Now!</button>
+      </div>
+
     </div>
 
-    <!-- <div id="photoGalleryPage" style="display: none; width: 100%; height: 100%;">
-      <h1 class="forbesH1" id="serviceMenu">PHOTO GALLERY</h1>
-      <div id="pixlee_container" style="width: 100%; height: 100%;"></div>
-      <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'2LuBwUS2ObJA0ZRtcYP3'});Pixlee.addSimpleWidget({widgetId:'9343'});};</script>
-      <script src="https://instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
-    </div> -->
+    <div id="locationPage" style="display: none;">
+      <h1 class="forbesH1" id="serviceMenu" style="margin-top: 6%;">LOCATION</h1>
+      <p class="on-color" style="padding-top: 0px;">25260 La Paz Rd #2, Laguna Hills, CA 92653</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4094615618556!2d-117.68223008491336!3d33.59467894915108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dce96f00b5adb9%3A0x16bce02f1f559106!2sForbes+Barber+Company!5e0!3m2!1sen!2sus!4v1539572827958" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
     <div  id="aboutUsPage" style="display: none">
       <h1 class="forbesH1">~ OUR STAFF ~</h1>
       <div class="container">
@@ -229,14 +243,7 @@
           <div class="col">
             <h3 class="forbesH1">Mark Forbes</h3>
             <img src="./images/aboutUs/mark.JPG" style="height: 200px; border-radius: 100px">
-            <h3 class="bookNow" id="mark" onclick="bookWithStaff(event)">BOOK WITH MARK
-
-            </h3>
-          </div>
-          <div class="col">
-            <h3 class="forbesH1">Evan Apodaca</h3>
-            <img src="./images/aboutUs/evan.JPG" style="height: 200px; border-radius: 100px">
-            <h3 class="bookNow" id="evan" onclick="bookWithStaff(event)">BOOK WITH EVAN</h3>
+            <h3 class="bookNow" id="mark" onclick="bookWithStaff(event)">BOOK WITH MARK</h3>
           </div>
           <div class="col">
             <h3 class="forbesH1">Brandon Duby</h3>
@@ -244,16 +251,6 @@
             <h3 class="bookNow" id="brandon" onclick="bookWithStaff(event)">BOOK WITH BRANDON</h3>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col">
-            <h3 class="forbesH1">Thomas Ficcadenti</h3>
-            <img src="./images/aboutUs/mark.JPG" style="height: 200px; border-radius: 100px">
-          </div>
-          <div class="col">
-            <img>
-            <h3 class="forbesH1">Thomas Ficcadenti</h3>
-          </div>
-        </div> -->
       </div>
     </div>
   </body>
