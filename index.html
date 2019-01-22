@@ -21,7 +21,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!-- external Fonts -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+       fbq('init', '2130752553855249');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" src="https://www.facebook.com/tr?id=2130752553855249&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 
     <title>Forbes Barber Co</title>
   </head>
@@ -236,18 +252,24 @@
       <p class="on-color" style="padding-top: 0px;">25260 La Paz Rd #2, Laguna Hills, CA 92653</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4094615618556!2d-117.68223008491336!3d33.59467894915108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dce96f00b5adb9%3A0x16bce02f1f559106!2sForbes+Barber+Company!5e0!3m2!1sen!2sus!4v1539572827958" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
+
     <div  id="aboutUsPage" style="display: none">
       <h1 class="forbesH1">~ OUR STAFF ~</h1>
       <div class="container">
         <div class="row" style="text-align: center">
-          <div class="col">
+          <div class="col-sm-4">
             <h3 class="forbesH1">Mark Forbes</h3>
             <img src="./images/aboutUs/mark.JPG" style="height: 200px; border-radius: 100px">
             <h3 class="bookNow" id="mark" onclick="bookWithStaff(event)">BOOK WITH MARK</h3>
           </div>
-          <div class="col">
+          <div class="col-sm-4">
             <h3 class="forbesH1">Brandon Duby</h3>
             <img src="./images/aboutUs/brandon.JPG" style="height: 200px; border-radius: 100px">
+            <h3 class="bookNow" id="brandon" onclick="bookWithStaff(event)">BOOK WITH BRANDON</h3>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="forbesH1">Max Myers</h3>
+            <img src="./images/aboutUs/max.JPG" style="height: 200px; border-radius: 100px">
             <h3 class="bookNow" id="brandon" onclick="bookWithStaff(event)">BOOK WITH BRANDON</h3>
           </div>
         </div>
