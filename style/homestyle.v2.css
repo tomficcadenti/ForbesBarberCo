@@ -201,10 +201,12 @@ iframe {
 }
 
 .topnavMobile {
+  position: fixed;
   overflow: hidden;
   background-color: #333;
-  position: relative;
+  width: 100%;
   display: none;
+  z-index: 6;
 }
 
 .topnavMobile #myLinks {

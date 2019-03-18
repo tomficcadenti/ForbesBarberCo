@@ -74,7 +74,7 @@ function detectMobile() {
   if (window.innerWidth <= 900 && window.innerHeight <= 800) {
    desktopNav.style.display = "none";
    mobileNav.style.display = "block";
-   banner.style.margin = "0px 0px 0px 0px";
+   banner.style.margin = "53px 0px 0px 0px";
  } else {
    desktopNav.style.display = "block";
    mobileNav.style.display = "none";
