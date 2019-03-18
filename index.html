@@ -36,7 +36,7 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="topbanner" id="topbanner">
-      <div class="nav-logo" id="home" onclick="homeClick()">
+      <div class="nav-logo" id="home" href="#" onclick="homeClick()">
         <img src="./images/home/whiteOverBlackLogo.jpg">
       </div>
 
@@ -45,9 +45,8 @@
            id="bookNow"
            onclick="bookNowClick()">BOOK NOW</p>
         <p style="border-right: 1px solid white;"
-           onclick="serviceMenuClick()"
-           id="services">
-          SERVICE MENU
+           id="services" onclick="serviceMenuClick()">
+          <a href="#serviceMenu">SERVICE MENU</a>
         </p>
         <p style="border-right: 1px solid white;"
            id="photoGallery"
@@ -56,11 +55,11 @@
         <p style="border-right: 1px solid white;"
            id="photoGallery"
            onclick="locationClick()">
-           LOCATION</p>
+           <a href="#location">LOCATION</a></p>
         <p class="topnavlast"
            id="aboutUs"
            onclick="aboutUsClick()">
-           ABOUT US</p>
+           <a href="#aboutUs">ABOUT US</a></p>
       </div>
     </div>
 
@@ -70,8 +69,8 @@
       <div id="myLinks">
         <a href="#" class="forbesH2mobileNav" onclick="bookNowClick()">Book Now</a>
         <a href="#" class="forbesH2mobileNav" onclick="photoGalleryClick()">Photo Gallery</a>
-        <a href="#" class="forbesH2mobileNav" onclick="locationClick()">Location</a>
-        <a href="#" class="forbesH2mobileNav" onclick="aboutUsClick()">About Us</a>
+        <a href="#location" class="forbesH2mobileNav" onclick="locationClick()">Location</a>
+        <a href="#aboutUs" class="forbesH2mobileNav" onclick="aboutUsClick()">About Us</a>
       </div>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -81,7 +80,7 @@
 
     <div id="homePage">
       <div>
-        <img class="banner-image" src="./images/home/mainBanner.jpg">
+        <img id="banner" class="banner-image" src="./images/home/mainBanner.jpg">
       </div>
 
       <h1 class="forbesH1" style="margin-bottom: 0px" id="serviceMenu">SERVICE MENU</h1>
@@ -116,7 +115,7 @@
             </div>
             <div class="col-lg-4">
               <h4>Little Mans Haircut</h4>
-              <p>CHILDREN 12 AND UNDER ONLY. Any machine length on the sides, with shear work on top.<br/>25 minutes. $25</p>
+              <p>CHILDREN 12 AND UNDER ONLY. Any machine length on the sides, with shear work on top.<br/>25 minutes. $23</p>
             </div>
             <div class="col-lg-4">
             </div>
@@ -263,7 +262,7 @@
           <div class="col-sm-4">
             <h3 class="forbesH1">Max Myers</h3>
             <img src="./images/aboutUs/max.JPG" style="height: 200px; border-radius: 100px">
-            <h3 class="bookNow" id="brandon" onclick="bookWithStaff(event)">BOOK WITH BRANDON</h3>
+            <h3 class="bookNow" id="max" onclick="bookWithStaff(event)">BOOK WITH MAX</h3>
           </div>
         </div>
       </div>

@@ -111,6 +111,16 @@ iframe {
   margin-top: 18px;
 }
 
+.topnav a {
+  color: white;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color: #6C6C6C;
+  text-decoration: none;
+}
+
 #bookNow:hover {
   cursor: pointer;
   color: #6C6C6C;

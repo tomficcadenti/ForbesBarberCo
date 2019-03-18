@@ -1,6 +1,7 @@
 function homeClick() {
   hideAllContent();
   document.getElementById('homePage').style.display = "block";
+  window.location.href = "https://forbesbarberco.com";
 }
 
 function serviceMenuClick() {
@@ -25,11 +26,11 @@ function aboutUsClick() {
 }
 
 function bookNowClick() {
-    window.location.href = "./BookNow/index.html";
+    window.location.href = "https://forbesbarberco.com/BookNow";
 }
 
 function goHomeExternalClick() {
-    window.location.href = "../index.html";
+    window.location.href = "https://forbesbarberco.com";
 }
 
 function locationClick() {
@@ -68,12 +69,16 @@ function detectMobile() {
   var desktopNav = document.getElementById("topbanner");
   var mobileNav = document.getElementById("topnavMobile");
 
+  var banner = document.getElementById("banner");
+
   if (window.innerWidth <= 900 && window.innerHeight <= 800) {
    desktopNav.style.display = "none";
    mobileNav.style.display = "block";
+   banner.style.margin = "0px 0px 0px 0px";
  } else {
    desktopNav.style.display = "block";
    mobileNav.style.display = "none";
+   banner.style.margin = "87px 0px 0px 0px";
  }
 
  $(window).resize(function() {
