@@ -26,7 +26,7 @@ function aboutUsClick() {
 }
 
 function bookNowClick() {
-    window.location.href = "https://forbesbarberco.com/BookNow";
+    window.location.href = "https://forbesbarberco.com";
 }
 
 function goHomeExternalClick() {
